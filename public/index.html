@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- Incluimos la biblioteca de Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script> 
+    <!-- Enlazamos nuestro archivo de estilos CSS -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Creamos la estructura del chat -->
+    <div id="mario-chat">
+        <div id="chat-window">
+            <div id="output"></div> <!-- Aquí se mostrarán los mensajes -->
+            <div id="feedback"></div> <!-- Aquí se mostrará cuando alguien esté escribiendo -->
+        </div>
+        <!-- Campos para que el usuario ingrese su nombre y mensaje -->
+        <input id="handle" type="text" placeholder="Handle">
+        <input id="message" type="text" placeholder="Message">
+        <button id="send" onclick="sendMessage()">Send</button>
+
+    </div>
+    <!-- Enlazamos nuestro archivo de script JavaScript -->
+    <script src="/chat.js"></script>
+</body>
+</html>
+

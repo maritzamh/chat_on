@@ -1,0 +1,85 @@
+/* Establece la fuente para todo el cuerpo del documento */
+body {
+    font-family: 'Nunito';
+    background: #000000; /* Fondo gris claro */
+}
+
+/* Estilo para encabezados secundarios */
+h2 {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #eea4a4; /* Color morado */
+}
+
+/* Estilo del contenedor principal del chat */
+#mario-chat {
+    max-width: 300px; /* Ancho máximo del chat */
+    margin: 30px auto; /* Centrado horizontalmente */
+    border: 1px solid #ea79a6; /* Borde gris claro */
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.05); /* Sombra suave */
+    border-radius: 2px; /* Bordes redondeados */
+}
+
+/* Estilo de la ventana de chat */
+#chat-window {
+    height: 500px; /* Altura máxima de la ventana de chat */
+    overflow: auto; /* Scroll cuando hay demasiados mensajes */
+    background: #f9f9f9; /* Fondo gris claro */
+}
+
+/* Estilo para los mensajes de chat */
+#output p {
+    padding: 14px 0px; /* Espaciado dentro de los mensajes */
+    margin: 0 20px; /* Margen alrededor de los mensajes */
+    border-bottom: 1px solid #dd70a5; /* Línea divisoria entre mensajes */
+    color: #070707; /* Color de texto gris oscuro */
+}
+
+/* Estilo para la retroalimentación cuando alguien está escribiendo */
+#feedback p {
+    color: #aaa; /* Color de texto gris claro */
+    padding: 14px 0px; /* Espaciado dentro de la retroalimentación */
+    margin: 0 20px; /* Margen alrededor de la retroalimentación */
+}
+
+/* Estilo para resaltar el nombre del usuario en los mensajes */
+#output strong {
+    color: #56262f; /* Color morado */
+}
+
+/* Estilo para etiquetas */
+label {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Estilo para campos de entrada de texto */
+input {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee; /* Fondo gris claro */
+    border: 0; /* Sin borde */
+    display: block;
+    width: 100%; /* Ancho completo del contenedor */
+    background: #fcf3ff; /* Fondo blanco */
+    border-bottom: 1px solid #a02296; /* Línea divisoria en la parte inferior */
+    font-family: Nunito; /* Fuente */
+    font-size: 13px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de enviar */
+button {
+    background: #ec80a6; /* Color de fondo morado oscuro */
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px; /* Tamaño de fuente */
+    border: 0; /* Sin borde */
+    padding: 12px 0; /* Espaciado dentro del botón */
+    width: 100%; /* Ancho completo del contenedor */
+    border-radius: 0 0 2px 2px; /* Bordes redondeados en la parte inferior */
+}
+
+/* Cambiar el color del botón al pasar el cursor sobre él */
+button#send:hover {
+    background-color: #d47176;
+}
